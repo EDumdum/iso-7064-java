@@ -61,8 +61,8 @@ import org.edumdum.iso.Iso7064;
 
 Then, you can simple call the static methods. See API section for more informations about the methods.
 ```
-Iso7064.compute('969500KSV493XWY0PS'); // 54
-Iso7064.computeWithoutCheck('7245005WBNJAFHBD0S'); // 55
+Iso7064.compute("969500KSV493XWY0PS"); // 54
+Iso7064.computeWithoutCheck("7245005WBNJAFHBD0S"); // 55
 ```
 
 ## API
