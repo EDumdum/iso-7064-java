@@ -7,9 +7,17 @@ Implementation of [ISO 7064](https://en.wikipedia.org/wiki/ISO_7064) used in val
 
 ## Installation
 
-Install using [maven](https://maven.apache.org/):
+Install using [maven](https://maven.apache.org/).
 
-```pom.xml
+Retrieve sources and install it into your maven repository using following commands:
+```bash
+git clone git@github.com:EDumdum/iso-7064-java.git
+cd iso-7064-java
+mvn clean install
+```
+
+Reference it into your pom.xml:
+```maven
 <dependency>
 	<groupId>org.edumdum.iso</groupId>
 	<artifactId>iso7064</artifactId>
@@ -19,11 +27,13 @@ Install using [maven](https://maven.apache.org/):
 
 ## Usage
 
-```*.java
-// import
+Into your class, add the following import:
+```java
 import org.edumdum.iso.Iso7064;
+```
 
-// method
+Then, you can simple call the static methods. See API section for more informations about the methods.
+```
 Iso7064.compute('969500KSV493XWY0PS'); // 54
 Iso7064.computeWithoutCheck('7245005WBNJAFHBD0S'); // 55
 ```
