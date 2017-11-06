@@ -20,12 +20,12 @@ Install using [maven](https://maven.apache.org/):
 ## Usage
 
 ```*.java
-# import
+// import
 import org.edumdum.iso.Iso7064;
 
-# method
-iso7064.compute('969500KSV493XWY0PS'); // 54
-iso7064.computeWithoutCheck('7245005WBNJAFHBD0S'); // 55
+// method
+Iso7064.compute('969500KSV493XWY0PS'); // 54
+Iso7064.computeWithoutCheck('7245005WBNJAFHBD0S'); // 55
 ```
 
 ## API
@@ -38,8 +38,10 @@ Then the string is interpreted into a number.
 
 @param rawValue
 - must be not `null`
-- must respect format `^[0-9A_Z]{1,}$`
+- must respect format `^[0-9A-Z]{1,}$`
+
 @return Modulo 97 of the interpreted number
+
 @throws IllegalArgumentException 
 
 ### `computeWithtoutCheck(String rawValue)`-> `int`
@@ -52,5 +54,6 @@ Then the string is interpreted into a number.
 
 @param rawValue
 - must be not `null`
-- must respect format `^[0-9A_Z]{1,}$`
+- must respect format `^[0-9A-Z]{1,}$`
+
 @return Modulo 97 of the interpreted number

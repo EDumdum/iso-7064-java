@@ -14,7 +14,7 @@ public class Iso7064
 	 * 
 	 * @param rawValue
 	 * 	- must be not `null`
-	 * 	- must respect format `^[0-9A_Z]{1,}$`
+	 * 	- must respect format `^[0-9A-Z]{1,}$`
 	 * @return Modulo 97 of the interpreted number
 	 * @throws IllegalArgumentException
 	 */
@@ -36,7 +36,7 @@ public class Iso7064
 	 * 
 	 * @param rawValue
 	 * 	- must be not `null`
-	 * 	- must respect format `^[0-9A_Z]{1,}$`
+	 * 	- must respect format `^[0-9A-Z]{1,}$`
 	 * @return Modulo 97 of the interpreted number
 	 */
 	public static int computeWithoutCheck(String rawValue)
