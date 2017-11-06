@@ -9,6 +9,8 @@ Implementation of [ISO 7064](https://en.wikipedia.org/wiki/ISO_7064) used in val
 
 Install using [maven](https://maven.apache.org/).
 
+### Local repository
+
 Retrieve sources and install it into your maven repository using following commands:
 ```bash
 git clone git@github.com:EDumdum/iso-7064-java.git
@@ -18,11 +20,36 @@ mvn clean install
 
 Reference it into your pom.xml:
 ```maven
-<dependency>
-	<groupId>org.edumdum.iso</groupId>
-	<artifactId>iso7064</artifactId>
-	<version>1.0.0</version>
-</dependency>
+<dependencies>
+    <dependency>
+        <groupId>org.edumdum.iso</groupId>
+        <artifactId>iso7064</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+</dependencies>
+```
+
+### [JitPack](https://jitpack.io/)
+
+In your pom.xml, add a new repository:
+```maven
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+Then reference it, still in your pom.xml:
+```maven
+<dependencies>
+    <dependency>
+        <groupId>com.github.EDumdum</groupId>
+        <artifactId>iso-7064-java</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+</dependencies>
 ```
 
 ## Usage
